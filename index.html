@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Team Builder</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Carme" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body ng-app="tripulacao-master">
+  <div class="container">
+    <header>
+      <div class="text">
+        <h1>Tripulação</h1>
+        <h2>O seu dream team está aqui</h2>
+      </div>
+    </header>
+    <div class="banner">
+      <p>Astronautas</p>
+    </div>
+    <div class="jobs">
+      <div class="expbox">
+        <img src="images/icone1.png" alt="">
+        <div class="column-right">
+          <p>Developer</p>
+          <a href="#devbox">Saiba mais</a>
+        </div>
+      </div>
+      <div class="expbox">
+        <img src="images/icone2.png" alt="">
+        <div class="column-right">
+          <p>Designer</p>
+          <a href="#desbox">Saiba mais</a>
+        </div>
+      </div>
+      <div class="expbox">
+        <img src="images/icone3.png" alt="">
+        <div class="column-right">
+          <p>Businessman</p>
+          <a href="#busbox">Saiba mais</a>
+        </div>
+      </div>
+      <div class="description">
+        <div class="descbox03">
+          <h1 id="devbox">Developer</h1>
+          <p>A web developer is a programmer who specializes in, or is specifically engaged in, the development of World Wide Web applications, or distributed network applications that Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis blandit et nulla non bibendum. Donec sollicitudin est convallis, pharetra dui sit amet, bibendum augue. Maecenas sed sapien quam. Nulla suscipit, quam vitae porttitor ultrices, ipsum risus cursus ligula, quis rutrum neque diam vitae augue. Sed vitae nisl non felis vestibulum vestibulum blandit in nisi. Mauris nulla est, posuere et gravida vitae, laoreet eget purus.</p>
+        </div>
+        <div class="descbox04">
+          <h1 id="desbox">Designer</h1>
+          <p>O designer [dizáiner][1] é um profissional que desempenha atividade especializada de caráter técnico-científico, criativo e artístico para elaboração de projetos de design Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis blandit et nulla non bibendum. Donec sollicitudin est convallis, pharetra dui sit amet, bibendum augue. Maecenas sed sapien quam. Nulla suscipit, quam vitae porttitor ultrices, ipsum risus cursus ligula, quis rutrum neque diam vitae augue. Sed vitae nisl non felis vestibulum vestibulum blandit in nisi. Mauris nulla est, posuere et gravida vitae, laoreet eget purus.</p>
+        </div>
+        <div class="descbox05">
+          <h1 id="busbox">Businessman</h1>
+          <p>A businessperson is a person involved in business - in particular someone undertaking activities (commercial or industrial) for the purpose of generating cash flow, sales, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis blandit et nulla non bibendum. Donec sollicitudin est convallis, pharetra dui sit amet, bibendum augue. Maecenas sed sapien quam. Nulla suscipit, quam vitae porttitor ultrices, ipsum risus cursus ligula, quis rutrum neque diam vitae augue. Sed vitae nisl non felis vestibulum vestibulum blandit in nisi. Mauris nulla est, posuere et gravida vitae, laoreet eget purus.</p>
+        </div>
+      </div>
+      <h1 class="cadastro">Cadastre-se!</h1>
+
+
+      <div ng-controller="formController">
+        {{teste}}
+        <div class="formbox">
+          <div class="form">
+            <form class="" action="index.html" method="post">
+              <br>
+              <label></label><br><br>
+              <input type="text" name="Nome" placeholder="Seu nome" class="input" ng-model="master.nome"><br><br>
+              <label></label><br><br>
+              <input type="text" name="email" placeholder="Seu e-mail" class="input" ng-model="master.email"><br><br><br><br><br>
+              <label class="suaarea">Qual é a sua área?</label><br><br>
+              <select class="profissao" ng-model="master.profissao">
+                <option>Developer</option>
+                <option>Designer</option>
+                <option>Businessman</option>
+              </select><br><br><br><br>
+              <input type="button" name="Enviar" value="Enviar" ng-click="submit()" >
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+      </div>
+    </div>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+  </html>
